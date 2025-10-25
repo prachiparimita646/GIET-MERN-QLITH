@@ -1,0 +1,52 @@
+p{
+    background-color: blueviolet;
+}
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+.paragraph{
+    background-color: rgb(97, 184, 238);
+}
+h3{
+    background-color: aquamarine;
+}
+b,strong,p{
+    background-color: cornflowerblue;
+}
+*{
+    color: darkred;
+}
+.parent p{
+    background-color: cornsilk;
+}
+.parent>p{
+    background-color:darkgrey;
+}
+.parent + p{
+    background-color:bisque;
+}
+.parent ~ p{
+    background-color: chartreuse;
+}
+.learn-pseudo{
+    width:100px;
+    height:100px;
+    border:2px dotted darkgoldenrod;
+}
+.learn-pseudo:hover{
+    background-color: fuchsia;
+}
+input:focus{
+    background-color:antiquewhite;
+}
+ul li:first-child{
+    background-color: chocolate;
+}
+ul li:last-child{
+    background-color: blue;
+}
+ul li:nth-child(4){
+    background-color: blueviolet;
+}
