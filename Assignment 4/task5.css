@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.outer-box {
+  background: #f4b52c;
+  padding: 40px;
+}
+
+.inner-box {
+  background: white;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.title-box {
+  background: black;
+  color: #ff9fa0;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px 40px;
+  margin-bottom: 20px;
+}
+
+.subtitle-box {
+  background: black;
+  color: #ff9fa0;
+  font-size: 16px;
+  padding: 12px 40px;
+  line-height: 1.4;
+}

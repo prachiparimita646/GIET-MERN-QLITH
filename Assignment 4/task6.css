@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.frame-outer {
+  background: #1f1f1f;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.frame-inner {
+  background: #ffffff;
+  padding: 25px;
+}
+
+.frame-inner img {
+  width: 260px;
+  height: auto;
+  display: block;
+}

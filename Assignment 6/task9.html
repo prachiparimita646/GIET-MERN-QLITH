@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Panel Layout</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#3b3b3b;
+  font-family:Arial, sans-serif;
+}
+
+.wrapper{
+  position:relative;
+  width:600px;
+  height:600px;
+}
+
+.center{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:180px;
+  height:180px;
+  background:#0aa1a1;
+  border-radius:50%;
+  transform:translate(-50%, -50%);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  font-size:18px;
+}
+
+.panel{
+  position:absolute;
+  width:120px;
+  height:120px;
+  background:#00d4a4;
+  color:white;
+  border-radius:16px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:16px;
+}
+
+
+.p1{ top:0; left:50%; transform:translateX(-50%); }
+.p2{ top:90px; right:0; }
+.p3{ top:240px; right:0; }
+.p4{ bottom:90px; right:0; }
+.p5{ bottom:0; left:50%; transform:translateX(-50%); }
+.p6{ bottom:90px; left:0; }
+.p7{ top:240px; left:0; }
+.p8{ top:90px; left:0; }
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="center">CENTER DIV</div>
+
+  <div class="panel p1">PANEL 1</div>
+  <div class="panel p2">PANEL 2</div>
+  <div class="panel p3">PANEL 3</div>
+  <div class="panel p4">PANEL 4</div>
+  <div class="panel p5">PANEL 5</div>
+  <div class="panel p6">PANEL 6</div>
+  <div class="panel p7">PANEL 7</div>
+  <div class="panel p8">PANEL 8</div>
+
+</div>
+
+</body>
+</html>
