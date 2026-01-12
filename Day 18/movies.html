@@ -4,56 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-<body class="bg-gray-100 text-gray-900">
-    <nav class="bg-white shadow-md py-10 sticky top-0 z-0">
+<body class="bg-gray-100 text-gray-900 sticky top-0 z-10">
+    <nav class="bg-white shadow-md py-10">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="" class="text-xl font-bold text-red-600">Cinehub</a>
-            <a href="" class="text-gray-700 hover:text-red-600 font-medium">
-            Back to Home
-            </a>
+            <a href="index.html" class="text-xl font-bold text-red-600">Cinehub</a>
+            <a href="index.html" class="text-gray-700 hover:text-red-600 font-medium">Back to home</a>
+
         </div>
     </nav>
+
     <section class="py-10">
         <div class="max-w-3xl mx-auto px-4 text-center">
             <h1 class="text-3xl font-bold mb-6">Search Movies</h1>
             <div class="flex gap-3">
-                <input type="text" placeholder="Search Movies..."
+                <input type="text" placeholder="search movies..."
                 class="flex-1 px-4 py-3 rounded border outline-none focus:ring-2 focus:ring-red-500"id="search-input">
-                <button id="search-btn" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded">Search
-                </button>
+                <button id="search-btn" class="bg-red-600 hover:bg-red-700 text-while px-6 py-3 rounded">Search</button>
+
             </div>
         </div>
     </section>
-    <section class="px-6 py-20">
-        <div id="movies-container" class="max-w-7xl grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-        </div>
+    <section class="px-6 py-20">
+        <div id="movies-container" class="max-w-7xl grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+
     </section>
+
     <div id="movie-modal"
     class="fixed inset-0 bg-black/60 hidden items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-lg w-full p-6 relative">
-            <button class="absolute top-2 right-2 text-xl"onclick="closeModal()">
-                <i class="fa-solid fa-xmark"></i>>
-            </button>
-            <div id="modal-content">
+      <div class="bg-white rounded-lg max-w-lg w-full p-6 relative">
+          <button class="absolute top-2 right-2 text-xl" onclick="closeModal()">
+            <i class="fa-solid fa-cross"></i>
 
-            </div>
-        </div>
-    
+          </button>
+          <div id="modal-content">
+
+          </div>
+
+      </div>
+
     </div>
-    <!-- <img src="" alt=""class="w-full h-64 object-cover rounded mb-4">
-    <h2 class="text-xl font-bold mb-2">Title</h2>
-    <p class="text-sm mb-2">Year</p>
-    <p class="text-sm mb-2">Genre</p>
-    <p class="text-sm mb-2">Rating</p>
-    <p class="text-sm text-gray-600">plot</p> -->
 
-   <script src="movies.js"></script>
+    
+    <script src="movies.js"></script>
+ 
 </body>
 </html>
 
